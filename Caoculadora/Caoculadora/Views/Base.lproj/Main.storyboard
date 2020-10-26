@@ -50,7 +50,10 @@
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xp0-kh-Oid">
-                                        <rect key="frame" x="16" y="244" width="326" height="216"/>
+                                        <rect key="frame" x="16" y="244" width="326" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Ipu-NT-8N3"/>
+                                        </constraints>
                                     </pickerView>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ug-ux-uuP">
                                         <rect key="frame" x="99" y="598" width="160" height="38"/>

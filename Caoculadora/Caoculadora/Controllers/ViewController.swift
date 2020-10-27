@@ -36,6 +36,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         return Size.allCases[row].description
     }
     
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        self.view.endEditing(true)
+    }
+    
     
     @IBAction func calculateButton(_ sender: Any) {
         let years = Int(yearsTextField.text ?? "") ?? 0

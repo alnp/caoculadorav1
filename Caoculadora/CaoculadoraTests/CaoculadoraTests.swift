@@ -2,11 +2,10 @@
 //  CaoculadoraTests.swift
 //  CaoculadoraTests
 //
-//  Created by Alessandra Pereira on 25/10/20.
+//  Created by Alessandra Pereira on 26/10/20.
 //
 
 import XCTest
-@testable import Caoculadora
 
 class CaoculadoraTests: XCTestCase {
 
@@ -25,7 +24,7 @@ class CaoculadoraTests: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }

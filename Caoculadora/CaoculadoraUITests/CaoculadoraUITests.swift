@@ -35,38 +35,28 @@ class CaoculadoraUITests: XCTestCase {
      }
 
     func testExample() throws {
-        // UI tests must launch the application that they test.
         app.launch()
         
-//        app/*@START_MENU_TOKEN@*/.textFields["yearTextField"]/*[[".textFields[\"Ex.: 5\"]",".textFields[\"yearTextField\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-//        app/*@START_MENU_TOKEN@*/.keys["5"]/*[[".keyboards.keys[\"5\"]",".keys[\"5\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-//
-//        app/*@START_MENU_TOKEN@*/.textFields["monthsTextField"]/*[[".textFields[\"Ex.: 10\"]",".textFields[\"monthsTextField\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-//        app/*@START_MENU_TOKEN@*/.keys["1"]/*[[".keyboards.keys[\"1\"]",".keys[\"1\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-//        app/*@START_MENU_TOKEN@*/.keys["0"]/*[[".keyboards.keys[\"0\"]",".keys[\"0\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-//
-//        app/*@START_MENU_TOKEN@*/.pickerWheels["Mini"].press(forDuration: 0.5);/*[[".pickers[\"Seletor de porte\"].pickerWheels[\"Mini\"]",".tap()",".press(forDuration: 0.5);",".pickers[\"sizePickerView\"].pickerWheels[\"Mini\"]",".pickerWheels[\"Mini\"]"],[[[-1,4,1],[-1,3,1],[-1,0,1]],[[-1,2],[-1,1]]],[0,0]]@END_MENU_TOKEN@*/
-//        app/*@START_MENU_TOKEN@*/.staticTexts["Cãocular"]/*[[".buttons[\"Botão de calcular\"].staticTexts[\"Cãocular\"]",".buttons[\"calculateButton\"].staticTexts[\"Cãocular\"]",".staticTexts[\"Cãocular\"]"],[[[-1,2],[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-//        app.alerts["🐶 29 anos!"].scrollViews.otherElements.buttons["Ok"].tap()
-        
-        
-        let yeartextfieldTextField = app.textFields["yearTextField"]
-        yeartextfieldTextField.tap()
-        yeartextfieldTextField.typeText("5")
+        let yearTextField = app.textFields["yearTextField"]
+        yearTextField.tap()
+        XCTAssertEqual(yearTextField.value as! String, "Ex.: 5")
+        yearTextField.typeText("5")
+        XCTAssertEqual(yearTextField.value as! String, "5")
 
-        let monthstextfieldTextField = app/*@START_MENU_TOKEN@*/.textFields["monthsTextField"]/*[[".textFields[\"Ex.: 10\"]",".textFields[\"monthsTextField\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        monthstextfieldTextField.tap()
-        monthstextfieldTextField.typeText("10")
+        let monthsTextField = app/*@START_MENU_TOKEN@*/.textFields["monthsTextField"]/*[[".textFields[\"Ex.: 10\"]",".textFields[\"monthsTextField\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        monthsTextField.tap()
+        XCTAssertEqual(monthsTextField.value as! String, "Ex.: 10")
+        monthsTextField.typeText("10")
+        XCTAssertEqual(monthsTextField.value as! String, "10")
 
         app/*@START_MENU_TOKEN@*/.pickerWheels["Mini"]/*[[".pickers[\"Seletor de porte\"].pickerWheels[\"Mini\"]",".pickers[\"sizePickerView\"].pickerWheels[\"Mini\"]",".pickerWheels[\"Mini\"]"],[[[-1,2],[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.swipeUp()
-        app/*@START_MENU_TOKEN@*/.buttons["calculateButton"]/*[[".buttons[\"Botão de calcular\"]",".buttons[\"calculateButton\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
+        let calculateButton = app/*@START_MENU_TOKEN@*/.buttons["calculateButton"]/*[[".buttons[\"Botão de calcular\"]",".buttons[\"calculateButton\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        XCTAssertTrue(calculateButton.exists)
+        calculateButton.tap()
+        
+        XCTAssertTrue(app.alerts["🐶 46 anos!"].exists)
         app.alerts["🐶 46 anos!"].scrollViews.otherElements.buttons["Ok"].tap()
-//
-        
-        
-        
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
     func testLaunchPerformance() throws {

@@ -1,2 +1,3 @@
-# caoculadora
-Uma calculadora com fins educacionais desenvolvida durante o Onboarding de programação.
+# Cãoculadora 🐶
+### Onboarding de Programação + Testes -  Developer Academy UFPE
+Cãoculadora desenvolvida para o onboarding de programação e aula sobre testes

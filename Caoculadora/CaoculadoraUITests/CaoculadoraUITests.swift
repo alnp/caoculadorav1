@@ -34,7 +34,7 @@ class CaoculadoraUITests: XCTestCase {
       app.terminate()
      }
 
-    func testExample() throws {
+    func testCalculateButton() throws {
         app.launch()
         
         let yearTextField = app.textFields["yearTextField"]
@@ -57,6 +57,41 @@ class CaoculadoraUITests: XCTestCase {
         
         XCTAssertTrue(app.alerts["🐶 46 anos!"].exists)
         app.alerts["🐶 46 anos!"].scrollViews.otherElements.buttons["Ok"].tap()
+    }
+    
+    func testTextField_Empty() {
+        app.launch()
+        
+        let calculateButton = app/*@START_MENU_TOKEN@*/.buttons["calculateButton"]/*[[".buttons[\"Botão de calcular\"]",".buttons[\"calculateButton\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        XCTAssertTrue(calculateButton.exists)
+        calculateButton.tap()
+        
+        XCTAssertTrue(app.alerts["🐶 0 anos!"].exists)
+        app.alerts["🐶 0 anos!"].scrollViews.otherElements.buttons["Ok"].tap()
+    }
+    
+    func testTextField_NonNumeric() {
+        app.launch()
+        let yearTextField = app.textFields["yearTextField"]
+        yearTextField.tap()
+        XCTAssertEqual(yearTextField.value as! String, "Ex.: 5")
+        yearTextField.typeText("a")
+        XCTAssertEqual(yearTextField.value as! String, "a")
+
+        let monthsTextField = app.textFields["monthsTextField"]
+        monthsTextField.tap()
+        XCTAssertEqual(monthsTextField.value as! String, "Ex.: 10")
+        monthsTextField.typeText("b")
+        XCTAssertEqual(monthsTextField.value as! String, "b")
+        
+        app/*@START_MENU_TOKEN@*/.pickerWheels["Mini"]/*[[".pickers[\"Seletor de porte\"].pickerWheels[\"Mini\"]",".pickers[\"sizePickerView\"].pickerWheels[\"Mini\"]",".pickerWheels[\"Mini\"]"],[[[-1,2],[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.swipeUp()
+        
+        let calculateButton = app/*@START_MENU_TOKEN@*/.buttons["calculateButton"]/*[[".buttons[\"Botão de calcular\"]",".buttons[\"calculateButton\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        XCTAssertTrue(calculateButton.exists)
+        calculateButton.tap()
+        
+        XCTAssertTrue(app.alerts["🐶 0 anos!"].exists)
+        app.alerts["🐶 0 anos!"].scrollViews.otherElements.buttons["Ok"].tap()
     }
 
     func testLaunchPerformance() throws {

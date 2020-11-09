@@ -10,30 +10,21 @@ import XCTest
 class CaoculadoraUITests: XCTestCase {
     
     let app = XCUIApplication()
-
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
     override func tearDown() {
-      // Taking screenshot after test
-      let screenshot = XCUIScreen.main.screenshot()
-      let fullScreenshotAttachment = XCTAttachment(screenshot: screenshot)
-      fullScreenshotAttachment.lifetime = .keepAlways
-      add(fullScreenshotAttachment)
-      // Closing the app
-      app.terminate()
-     }
-
+        // Taking screenshot after test
+        let screenshot = XCUIScreen.main.screenshot()
+        let fullScreenshotAttachment = XCTAttachment(screenshot: screenshot)
+        fullScreenshotAttachment.lifetime = .keepAlways
+        add(fullScreenshotAttachment)
+        // Closing the app
+        app.terminate()
+    }
+    
     func testCalculateButton() throws {
         app.launch()
         
@@ -42,13 +33,13 @@ class CaoculadoraUITests: XCTestCase {
         XCTAssertEqual(yearTextField.value as! String, "Ex.: 5")
         yearTextField.typeText("5")
         XCTAssertEqual(yearTextField.value as! String, "5")
-
+        
         let monthsTextField = app/*@START_MENU_TOKEN@*/.textFields["monthsTextField"]/*[[".textFields[\"Ex.: 10\"]",".textFields[\"monthsTextField\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
         monthsTextField.tap()
         XCTAssertEqual(monthsTextField.value as! String, "Ex.: 10")
         monthsTextField.typeText("10")
         XCTAssertEqual(monthsTextField.value as! String, "10")
-
+        
         app/*@START_MENU_TOKEN@*/.pickerWheels["Mini"]/*[[".pickers[\"Seletor de porte\"].pickerWheels[\"Mini\"]",".pickers[\"sizePickerView\"].pickerWheels[\"Mini\"]",".pickerWheels[\"Mini\"]"],[[[-1,2],[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.swipeUp()
         
         let calculateButton = app/*@START_MENU_TOKEN@*/.buttons["calculateButton"]/*[[".buttons[\"Botão de calcular\"]",".buttons[\"calculateButton\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
@@ -77,7 +68,7 @@ class CaoculadoraUITests: XCTestCase {
         XCTAssertEqual(yearTextField.value as! String, "Ex.: 5")
         yearTextField.typeText("a")
         XCTAssertEqual(yearTextField.value as! String, "a")
-
+        
         let monthsTextField = app.textFields["monthsTextField"]
         monthsTextField.tap()
         XCTAssertEqual(monthsTextField.value as! String, "Ex.: 10")
@@ -93,7 +84,7 @@ class CaoculadoraUITests: XCTestCase {
         XCTAssertTrue(app.alerts["🐶 0 anos!"].exists)
         app.alerts["🐶 0 anos!"].scrollViews.otherElements.buttons["Ok"].tap()
     }
-
+    
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
             // This measures how long it takes to launch your application.

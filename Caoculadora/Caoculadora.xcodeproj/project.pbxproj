@@ -86,9 +86,8 @@
 				BE07680D25475C6400F5AFD7 /* CaoculadoraTests.swift */,
 				BE07680F25475C6400F5AFD7 /* Info.plist */,
 			);
-			name = CaoculadoraTests;
-			path = /Users/alessandrapereira/Desktop/testes/caoculadora/Caoculadora/CaoculadoraTests;
-			sourceTree = "<absolute>";
+			path = CaoculadoraTests;
+			sourceTree = "<group>";
 		};
 		BE07681C25475CDD00F5AFD7 /* CaoculadoraUITests */ = {
 			isa = PBXGroup;
@@ -96,9 +95,8 @@
 				BE07681D25475CDD00F5AFD7 /* CaoculadoraUITests.swift */,
 				BE07681F25475CDD00F5AFD7 /* Info.plist */,
 			);
-			name = CaoculadoraUITests;
-			path = /Users/alessandrapereira/Desktop/testes/caoculadora/Caoculadora/CaoculadoraUITests;
-			sourceTree = "<absolute>";
+			path = CaoculadoraUITests;
+			sourceTree = "<group>";
 		};
 		BE59105E254661B5007B697A = {
 			isa = PBXGroup;

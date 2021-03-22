@@ -41,16 +41,21 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex.: 5" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dHY-FZ-Q0F">
                                         <rect key="frame" x="16" y="48" width="326" height="34"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Campo de texto para inserir os anos do seu cachorro" identifier="yearTextField" label="Campo de texto para anos"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex.: 10" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kkB-QA-VmQ">
                                         <rect key="frame" x="16" y="146" width="326" height="34"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Campo de texto para inserir os meses do seu cachorro" identifier="monthsTextField" label="Campo de texto para anos"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xp0-kh-Oid">
                                         <rect key="frame" x="16" y="244" width="326" height="100"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Seletor para definir o porte do seu cachorro" identifier="sizePickerView" label="Seletor de porte">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="Ipu-NT-8N3"/>
                                         </constraints>
@@ -58,6 +63,7 @@
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ug-ux-uuP">
                                         <rect key="frame" x="99" y="598" width="160" height="38"/>
                                         <color key="backgroundColor" red="0.40784313729999999" green="0.2901960784" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Botão para realizar o cálculo da idade do seu cachorro em anos humanos" identifier="calculateButton" label="Botão de calcular"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="2Qj-Xy-XnN"/>
                                             <constraint firstAttribute="height" constant="38" id="gl5-Dr-Ame"/>

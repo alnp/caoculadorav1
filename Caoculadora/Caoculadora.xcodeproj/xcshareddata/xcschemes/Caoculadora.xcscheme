@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BE59107C254661B6007B697A"
+               BlueprintIdentifier = "BE07680A25475C6400F5AFD7"
                BuildableName = "CaoculadoraTests.xctest"
                BlueprintName = "CaoculadoraTests"
                ReferencedContainer = "container:Caoculadora.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BE591087254661B6007B697A"
+               BlueprintIdentifier = "BE07681A25475CDD00F5AFD7"
                BuildableName = "CaoculadoraUITests.xctest"
                BlueprintName = "CaoculadoraUITests"
                ReferencedContainer = "container:Caoculadora.xcodeproj">

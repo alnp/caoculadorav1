@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE07680E25475C6400F5AFD7 /* CaoculadoraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE07680D25475C6400F5AFD7 /* CaoculadoraTests.swift */; };
+		BE07681E25475CDD00F5AFD7 /* CaoculadoraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE07681D25475CDD00F5AFD7 /* CaoculadoraUITests.swift */; };
 		BE59106B254661B5007B697A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE59106A254661B5007B697A /* AppDelegate.swift */; };
 		BE59106D254661B5007B697A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE59106C254661B5007B697A /* SceneDelegate.swift */; };
 		BE59106F254661B5007B697A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE59106E254661B5007B697A /* ViewController.swift */; };
 		BE591072254661B5007B697A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE591070254661B5007B697A /* Main.storyboard */; };
 		BE591074254661B6007B697A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE591073254661B6007B697A /* Assets.xcassets */; };
 		BE591077254661B6007B697A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE591075254661B6007B697A /* LaunchScreen.storyboard */; };
-		BE591082254661B6007B697A /* CaoculadoraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE591081254661B6007B697A /* CaoculadoraTests.swift */; };
-		BE59108D254661B6007B697A /* CaoculadoraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE59108C254661B6007B697A /* CaoculadoraUITests.swift */; };
 		BE59109F25467D19007B697A /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE59109E25467D19007B697A /* Dog.swift */; };
 		BE5910AC2546E420007B697A /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5910AB2546E420007B697A /* Size.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BE59107E254661B6007B697A /* PBXContainerItemProxy */ = {
+		BE07681025475C6400F5AFD7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BE59105F254661B5007B697A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BE591066254661B5007B697A;
 			remoteInfo = Caoculadora;
 		};
-		BE591089254661B6007B697A /* PBXContainerItemProxy */ = {
+		BE07682025475CDD00F5AFD7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BE59105F254661B5007B697A /* Project object */;
 			proxyType = 1;
@@ -37,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE07680B25475C6400F5AFD7 /* CaoculadoraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaoculadoraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE07680D25475C6400F5AFD7 /* CaoculadoraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaoculadoraTests.swift; sourceTree = "<group>"; };
+		BE07680F25475C6400F5AFD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE07681B25475CDD00F5AFD7 /* CaoculadoraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaoculadoraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE07681D25475CDD00F5AFD7 /* CaoculadoraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaoculadoraUITests.swift; sourceTree = "<group>"; };
+		BE07681F25475CDD00F5AFD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE591067254661B5007B697A /* Caoculadora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caoculadora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE59106A254661B5007B697A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE59106C254661B5007B697A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,32 +51,26 @@
 		BE591073254661B6007B697A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE591076254661B6007B697A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE591078254661B6007B697A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE59107D254661B6007B697A /* CaoculadoraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaoculadoraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE591081254661B6007B697A /* CaoculadoraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaoculadoraTests.swift; sourceTree = "<group>"; };
-		BE591083254661B6007B697A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE591088254661B6007B697A /* CaoculadoraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaoculadoraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE59108C254661B6007B697A /* CaoculadoraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaoculadoraUITests.swift; sourceTree = "<group>"; };
-		BE59108E254661B6007B697A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE59109E25467D19007B697A /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		BE5910AB2546E420007B697A /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BE07680825475C6400F5AFD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE07681825475CDD00F5AFD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE591064254661B5007B697A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BE59107A254661B6007B697A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BE591085254661B6007B697A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,12 +80,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE07680C25475C6400F5AFD7 /* CaoculadoraTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE07680D25475C6400F5AFD7 /* CaoculadoraTests.swift */,
+				BE07680F25475C6400F5AFD7 /* Info.plist */,
+			);
+			path = CaoculadoraTests;
+			sourceTree = "<group>";
+		};
+		BE07681C25475CDD00F5AFD7 /* CaoculadoraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE07681D25475CDD00F5AFD7 /* CaoculadoraUITests.swift */,
+				BE07681F25475CDD00F5AFD7 /* Info.plist */,
+			);
+			path = CaoculadoraUITests;
+			sourceTree = "<group>";
+		};
 		BE59105E254661B5007B697A = {
 			isa = PBXGroup;
 			children = (
 				BE591069254661B5007B697A /* Caoculadora */,
-				BE591080254661B6007B697A /* CaoculadoraTests */,
-				BE59108B254661B6007B697A /* CaoculadoraUITests */,
+				BE07680C25475C6400F5AFD7 /* CaoculadoraTests */,
+				BE07681C25475CDD00F5AFD7 /* CaoculadoraUITests */,
 				BE591068254661B5007B697A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,8 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				BE591067254661B5007B697A /* Caoculadora.app */,
-				BE59107D254661B6007B697A /* CaoculadoraTests.xctest */,
-				BE591088254661B6007B697A /* CaoculadoraUITests.xctest */,
+				BE07680B25475C6400F5AFD7 /* CaoculadoraTests.xctest */,
+				BE07681B25475CDD00F5AFD7 /* CaoculadoraUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,24 +128,6 @@
 				BE5910D02546E5C0007B697A /* Controllers */,
 			);
 			path = Caoculadora;
-			sourceTree = "<group>";
-		};
-		BE591080254661B6007B697A /* CaoculadoraTests */ = {
-			isa = PBXGroup;
-			children = (
-				BE591081254661B6007B697A /* CaoculadoraTests.swift */,
-				BE591083254661B6007B697A /* Info.plist */,
-			);
-			path = CaoculadoraTests;
-			sourceTree = "<group>";
-		};
-		BE59108B254661B6007B697A /* CaoculadoraUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BE59108C254661B6007B697A /* CaoculadoraUITests.swift */,
-				BE59108E254661B6007B697A /* Info.plist */,
-			);
-			path = CaoculadoraUITests;
 			sourceTree = "<group>";
 		};
 		BE5910B02546E465007B697A /* Model */ = {
@@ -177,6 +177,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BE07680A25475C6400F5AFD7 /* CaoculadoraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE07681225475C6400F5AFD7 /* Build configuration list for PBXNativeTarget "CaoculadoraTests" */;
+			buildPhases = (
+				BE07680725475C6400F5AFD7 /* Sources */,
+				BE07680825475C6400F5AFD7 /* Frameworks */,
+				BE07680925475C6400F5AFD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE07681125475C6400F5AFD7 /* PBXTargetDependency */,
+			);
+			name = CaoculadoraTests;
+			productName = CaoculadoraTests;
+			productReference = BE07680B25475C6400F5AFD7 /* CaoculadoraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE07681A25475CDD00F5AFD7 /* CaoculadoraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE07682225475CDD00F5AFD7 /* Build configuration list for PBXNativeTarget "CaoculadoraUITests" */;
+			buildPhases = (
+				BE07681725475CDD00F5AFD7 /* Sources */,
+				BE07681825475CDD00F5AFD7 /* Frameworks */,
+				BE07681925475CDD00F5AFD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE07682125475CDD00F5AFD7 /* PBXTargetDependency */,
+			);
+			name = CaoculadoraUITests;
+			productName = CaoculadoraUITests;
+			productReference = BE07681B25475CDD00F5AFD7 /* CaoculadoraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		BE591066254661B5007B697A /* Caoculadora */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE591091254661B6007B697A /* Build configuration list for PBXNativeTarget "Caoculadora" */;
@@ -194,42 +230,6 @@
 			productReference = BE591067254661B5007B697A /* Caoculadora.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BE59107C254661B6007B697A /* CaoculadoraTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BE591094254661B6007B697A /* Build configuration list for PBXNativeTarget "CaoculadoraTests" */;
-			buildPhases = (
-				BE591079254661B6007B697A /* Sources */,
-				BE59107A254661B6007B697A /* Frameworks */,
-				BE59107B254661B6007B697A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BE59107F254661B6007B697A /* PBXTargetDependency */,
-			);
-			name = CaoculadoraTests;
-			productName = CaoculadoraTests;
-			productReference = BE59107D254661B6007B697A /* CaoculadoraTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		BE591087254661B6007B697A /* CaoculadoraUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BE591097254661B6007B697A /* Build configuration list for PBXNativeTarget "CaoculadoraUITests" */;
-			buildPhases = (
-				BE591084254661B6007B697A /* Sources */,
-				BE591085254661B6007B697A /* Frameworks */,
-				BE591086254661B6007B697A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BE59108A254661B6007B697A /* PBXTargetDependency */,
-			);
-			name = CaoculadoraUITests;
-			productName = CaoculadoraUITests;
-			productReference = BE591088254661B6007B697A /* CaoculadoraUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -239,16 +239,16 @@
 				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
+					BE07680A25475C6400F5AFD7 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = BE591066254661B5007B697A;
+					};
+					BE07681A25475CDD00F5AFD7 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = BE591066254661B5007B697A;
+					};
 					BE591066254661B5007B697A = {
 						CreatedOnToolsVersion = 12.1;
-					};
-					BE59107C254661B6007B697A = {
-						CreatedOnToolsVersion = 12.1;
-						TestTargetID = BE591066254661B5007B697A;
-					};
-					BE591087254661B6007B697A = {
-						CreatedOnToolsVersion = 12.1;
-						TestTargetID = BE591066254661B5007B697A;
 					};
 				};
 			};
@@ -266,13 +266,27 @@
 			projectRoot = "";
 			targets = (
 				BE591066254661B5007B697A /* Caoculadora */,
-				BE59107C254661B6007B697A /* CaoculadoraTests */,
-				BE591087254661B6007B697A /* CaoculadoraUITests */,
+				BE07680A25475C6400F5AFD7 /* CaoculadoraTests */,
+				BE07681A25475CDD00F5AFD7 /* CaoculadoraUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BE07680925475C6400F5AFD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE07681925475CDD00F5AFD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE591065254661B5007B697A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -283,23 +297,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE59107B254661B6007B697A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BE591086254661B6007B697A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BE07680725475C6400F5AFD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE07680E25475C6400F5AFD7 /* CaoculadoraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE07681725475CDD00F5AFD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE07681E25475CDD00F5AFD7 /* CaoculadoraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE591063254661B5007B697A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,34 +328,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE591079254661B6007B697A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BE591082254661B6007B697A /* CaoculadoraTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BE591084254661B6007B697A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BE59108D254661B6007B697A /* CaoculadoraUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BE59107F254661B6007B697A /* PBXTargetDependency */ = {
+		BE07681125475C6400F5AFD7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BE591066254661B5007B697A /* Caoculadora */;
-			targetProxy = BE59107E254661B6007B697A /* PBXContainerItemProxy */;
+			targetProxy = BE07681025475C6400F5AFD7 /* PBXContainerItemProxy */;
 		};
-		BE59108A254661B6007B697A /* PBXTargetDependency */ = {
+		BE07682125475CDD00F5AFD7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BE591066254661B5007B697A /* Caoculadora */;
-			targetProxy = BE591089254661B6007B697A /* PBXContainerItemProxy */;
+			targetProxy = BE07682025475CDD00F5AFD7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -363,6 +363,84 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BE07681325475C6400F5AFD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9S8UE9T8R2;
+				INFOPLIST_FILE = CaoculadoraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = codes.alessandra.CaoculadoraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Caoculadora.app/Caoculadora";
+			};
+			name = Debug;
+		};
+		BE07681425475C6400F5AFD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9S8UE9T8R2;
+				INFOPLIST_FILE = CaoculadoraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = codes.alessandra.CaoculadoraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Caoculadora.app/Caoculadora";
+			};
+			name = Release;
+		};
+		BE07682325475CDD00F5AFD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9S8UE9T8R2;
+				INFOPLIST_FILE = CaoculadoraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = codes.alessandra.CaoculadoraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Caoculadora;
+			};
+			name = Debug;
+		};
+		BE07682425475CDD00F5AFD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9S8UE9T8R2;
+				INFOPLIST_FILE = CaoculadoraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = codes.alessandra.CaoculadoraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Caoculadora;
+			};
+			name = Release;
+		};
 		BE59108F254661B6007B697A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -517,93 +595,27 @@
 			};
 			name = Release;
 		};
-		BE591095254661B6007B697A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9S8UE9T8R2;
-				INFOPLIST_FILE = CaoculadoraTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = codes.alessandra.CaoculadoraTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Caoculadora.app/Caoculadora";
-			};
-			name = Debug;
-		};
-		BE591096254661B6007B697A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9S8UE9T8R2;
-				INFOPLIST_FILE = CaoculadoraTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = codes.alessandra.CaoculadoraTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Caoculadora.app/Caoculadora";
-			};
-			name = Release;
-		};
-		BE591098254661B6007B697A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9S8UE9T8R2;
-				INFOPLIST_FILE = CaoculadoraUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = codes.alessandra.CaoculadoraUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Caoculadora;
-			};
-			name = Debug;
-		};
-		BE591099254661B6007B697A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9S8UE9T8R2;
-				INFOPLIST_FILE = CaoculadoraUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = codes.alessandra.CaoculadoraUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Caoculadora;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BE07681225475C6400F5AFD7 /* Build configuration list for PBXNativeTarget "CaoculadoraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE07681325475C6400F5AFD7 /* Debug */,
+				BE07681425475C6400F5AFD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE07682225475CDD00F5AFD7 /* Build configuration list for PBXNativeTarget "CaoculadoraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE07682325475CDD00F5AFD7 /* Debug */,
+				BE07682425475CDD00F5AFD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BE591062254661B5007B697A /* Build configuration list for PBXProject "Caoculadora" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -618,24 +630,6 @@
 			buildConfigurations = (
 				BE591092254661B6007B697A /* Debug */,
 				BE591093254661B6007B697A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BE591094254661B6007B697A /* Build configuration list for PBXNativeTarget "CaoculadoraTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BE591095254661B6007B697A /* Debug */,
-				BE591096254661B6007B697A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BE591097254661B6007B697A /* Build configuration list for PBXNativeTarget "CaoculadoraUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BE591098254661B6007B697A /* Debug */,
-				BE591099254661B6007B697A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

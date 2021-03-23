@@ -33,8 +33,13 @@ platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do
     bump_build_number
-    build_app(scheme: "Caoculadora")
-    upload_to_testflight
+    ipa = build_app(
+      scheme: "Caoculadora",
+      output_directory: "./builds"
+    )
+    upload_to_testflight(
+      ipa: ipa
+    )
   end
 
 end

@@ -50,7 +50,6 @@ lane :beta do
   bump_build_number
   ipa = build_app(
     scheme: "Caoculadora",
-    export_method: "app-store",
     output_directory: "./builds"
   )
 

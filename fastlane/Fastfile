@@ -33,6 +33,7 @@ platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do
     setup_travis
+    # xcversion(version: "12.2") # Selects Xcode 12.2
 
     match(
       type: "development",
@@ -54,7 +55,7 @@ platform :ios do
       scheme: "Caoculadora",
       output_directory: "./builds"
     )
-    
+
     upload_to_testflight(
       ipa: ipa
     )

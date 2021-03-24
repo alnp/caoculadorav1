@@ -18,4 +18,5 @@ jobs:
       name: "Deploy to TestFlight"
       script:
         - echo "machine github.com login $GITHUB_API_TOKEN" >> ~/.netrc
-        - bundle exec fastlane beta
+        - bundle exec fastlane build
+        - fastlane pilot upload

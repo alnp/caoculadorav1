@@ -573,7 +573,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = codes.alessandra.Caoculadora;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore codes.alessandra.Caoculadora";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development codes.alessandra.Caoculadora";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

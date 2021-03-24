@@ -1,0 +1,41 @@
+# environment setup
+os: osx
+language: swift
+osx_image: xcode12.2
+xcode_project: Caoculadora.xcodeproj # path to your xcodeproj folder
+xcode_scheme: Caoculadora
+xcode_destination: platform=iOS Simulator,name=iPhone 11
+
+# caching of dependencies
+cache:
+  bundler: true
+  # directories:
+  #   - Carthage
+
+# branch safelist
+# branches:
+#   only:
+#     - master
+    # - /^release\/.*$/
+
+# prepare dependency managers
+before_install:
+  - rvm install 2.7.2
+  # - brew update
+  # - brew outdated carthage || brew upgrade carthage
+  - gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)"
+
+# install dependencies
+install:
+  # - travis_wait carthage bootstrap --platform iOS --cache-builds
+  - bundle install
+
+# jobs and stages to run
+jobs:
+  include: Beta Deploy
+    - stage: Beta Deploy
+      name: Deploy to TestFlight
+      script:
+        - echo "machine github.com login $GITHUB_API_TOKEN" >> ~/.netrc
+        - bundle exec fastlane beta
+      # if: branch =~ /^release\/.*$/

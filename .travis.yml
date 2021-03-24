@@ -16,6 +16,7 @@ jobs:
     name: Deploy to TestFlight
     script:
     - echo "machine github.com login $GITHUB_API_TOKEN" >> ~/.netrc
+    - bundle update fastlane
     - bundle exec fastlane beta
 env:
   global:

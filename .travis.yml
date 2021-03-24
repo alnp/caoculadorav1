@@ -1,23 +1,23 @@
 os: osx
 language: objective-c
 osx_image: xcode12.2
-
 xcode_project: Caoculadora.xcodeproj
 xcode_scheme: Caoculadora
 xcode_destination: platform=iOS Simulator,name=iPhone 11
-
 before_install:
-  - export IOS_SIMULATOR_UDID=`instruments -s devices | grep "iPhone 11 (9.3" | awk -F '[ ]' '{print $4}' | awk -F '[\[]' '{print $2}' | sed 's/.$//'`
-  - echo $IOS_SIMULATOR_UDID
-  - rvm install 2.7.2
-  - bundle update
-
-# jobs and stages to run
+- export IOS_SIMULATOR_UDID=`instruments -s devices | grep "iPhone 11 (9.3" | awk
+  -F '[ ]' '{print $4}' | awk -F '[\[]' '{print $2}' | sed 's/.$//'`
+- echo $IOS_SIMULATOR_UDID
+- rvm install 2.7.2
+- bundle update
 jobs:
   include:
-    - stage: "Beta Deploy"
-      name: "Deploy to TestFlight"
-      script:
-        - echo "machine github.com login $GITHUB_API_TOKEN" >> ~/.netrc
-        - bundle exec fastlane build
-        # - bundle exec fastlane pilot upload
+  - stage: Beta Deploy
+    name: Deploy to TestFlight
+    script:
+    - echo "machine github.com login $GITHUB_API_TOKEN" >> ~/.netrc
+    - bundle exec fastlane beta
+env:
+  global:
+  - secure: dsH1bSqEms4jAeogs6xA0udbtncMG1ovGLKsgPiiWCpADLGLFGFog54WvdFj5Li2+qDsDMsPxiVTGT8Zfdsfs70yzoUTv9rJXG3n4LPix66lWhak2Tdv+DJ7wcQfb9fNas5QNZ3x6JMyqb+PcfAIh4MCZ1pZN8QBh1ux8+c4C+PcmF5Y2Bsc6d8AV34VvRj9dPmh7MuIrJutIRD4+S63B//M7Jw16GWJPD9EgUvUVBabpEMMEhEIv3DSfV3rjqI95BahrG//uY16H223suqUl9PXzXpOCIvHsXUvO7xK3eFnZ0wadLMj3J3S0cOod3LPxBApAbL/88sG5dSxyhzcFpi0/JL/lxpNyq2wzkR9JebHAIc2AyA5HL8H04Co3g9fSekdB3SLXI76aRpvdEDzrJBXjLM1GkfwNxeNPCFLTaDVqMNfacl986AgZsxAcfP6rObAyhc08a8i1QAv3Pt+xRx0ODs6Lj932pQJStLPUrd0toF/A53Kq257xYafBzU1Hh4rH6YcOmTBsR070oIPkYm180kt3GbAumI5xQoRF6hzz6ckHXpcE6x1uNBHQUUdp0lqRrGpxUyGxROPGGFKrYQMZrXUHBTDTgw2OZrZM/xz72lEqpRDy7DJhePUVWoRVLWVZ9dZnASajNRWU6C9cz2r92rVlLtSbZ+NEx3Tzeg=
+  - secure: oA3LeJot9AVOjer44Qz6QS0MpCidwuFLfrc65qdKUZJH9lHH+TlWsgGtyXCsas/cTZXawhxhMekRPH85FZcXOUesePwP786igzu86Ka3RB25Sdlr8p0BBNB/8NcNnB2/cGB65u6k9KT5176wcsOKajOsMAn1mFo/FYqVcWwq9JjKNlc1nRtEr7Ce6XdWLDg9xaUo7f5zls5YjpVk24YUpZVcvqhR5uaf0CMb/06XbsPjHHkLEnNr/ZigESQATcHmmZPMvc+JayTF6coSi0s24eSGImjVDvre0RRlP2BcTd5gpO1TWmLwCIvIKvmpFPdUfdCyxj+7MBxavs2Msx2wHZ8KJ/iFa6uwUPLABx5dBCGf3jUk/aiv/JtKsu6h0bXjM0MxeMNlrXZpFXMZ2GC9GoeVDmcGZev7WyfzrAd2SUiUatb5Q0Os9tQjTdlq7O5c7mjyc1KL/HclzGTrND07ZE62Xcrn/rPKs6d3SzQmV+yrfZMQsw6sCYCzFdLPD5eP9Tm2+ibIaDvyPc7tGao7FRie5UdaGHs1NhUYTcRtdF2pI//enuFO8qb8Uf/v4cNWda2s/TOErHJ2wMD+90ZQ404UdwzFfUAZcHFYCKwPj7kZgeMLjYKi81RPbRcFz9dyK5AQrfeR2l9RGKfCyz3zwg1f4cyNt7s4+qwc3+rMLB4=

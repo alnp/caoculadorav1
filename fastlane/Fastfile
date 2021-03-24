@@ -12,7 +12,6 @@
 
 # Uncomment the line if you want fastlane to automatically update itself
 update_fastlane
-setup_travis
 
 default_platform(:ios)
 
@@ -33,7 +32,8 @@ platform :ios do
 
   desc "Push a new beta build to TestFlight"
   lane :beta do
-
+    setup_travis
+    
     match(
       type: "development",
       readonly: true

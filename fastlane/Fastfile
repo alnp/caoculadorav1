@@ -15,7 +15,6 @@
 
 default_platform(:ios)
 
-update_fastlane
 setup_travis
 
 desc 'Increments by 1 last build number'

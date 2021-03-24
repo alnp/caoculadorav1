@@ -32,6 +32,7 @@ platform :ios do
 
   desc "Push a new beta build to TestFlight"
   lane :beta do
+    setup_travis
     bump_build_number
     ipa = build_app(
       scheme: "Caoculadora",

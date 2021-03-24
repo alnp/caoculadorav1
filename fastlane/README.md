@@ -15,10 +15,9 @@ Install _fastlane_ using
 or alternatively using `brew install fastlane`
 
 # Available Actions
-## iOS
-### ios beta
+### beta
 ```
-fastlane ios beta
+fastlane beta
 ```
 Increments by 1 last build number
 

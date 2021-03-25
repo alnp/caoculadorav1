@@ -4,19 +4,21 @@ osx_image: xcode12.2
 xcode_project: Caoculadora.xcodeproj
 xcode_scheme: Caoculadora
 xcode_destination: platform=iOS Simulator,name=iPhone 11
+
 before_install:
 - export IOS_SIMULATOR_UDID=`instruments -s devices | grep "iPhone 11 (9.3" | awk
   -F '[ ]' '{print $4}' | awk -F '[\[]' '{print $2}' | sed 's/.$//'`
 - echo $IOS_SIMULATOR_UDID
 - rvm install 2.7.2
 - bundle update
+- bundle install
+
 jobs:
   include:
   - stage: Beta Deploy
     name: Deploy to TestFlight
     script:
     - echo "machine github.com login $GITHUB_API_TOKEN" >> ~/.netrc
-    - bundle update
     - bundle exec fastlane beta
 env:
   global:

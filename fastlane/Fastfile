@@ -15,7 +15,7 @@
 
 default_platform(:ios)
 
-setup_travis
+
 
 desc 'Increments by 1 last build number'
 def bump_build_number
@@ -32,6 +32,7 @@ end
 
 desc "Push a new beta build to TestFlight"
 lane :beta do
+  setup_travis
   match(
     type: "development",
     readonly: true

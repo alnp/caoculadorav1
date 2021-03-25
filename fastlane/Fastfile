@@ -16,7 +16,6 @@
 default_platform(:ios)
 
 
-
 desc 'Increments by 1 last build number'
 def bump_build_number
   build_number = get_build_number(xcodeproj: "Caoculadora.xcodeproj")

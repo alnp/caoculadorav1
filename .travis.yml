@@ -1,6 +1,6 @@
 os: osx
-language: objective-c
 osx_image: xcode12.2
+
 xcode_project: Caoculadora.xcodeproj
 xcode_scheme: Caoculadora
 xcode_destination: platform=iOS Simulator,name=iPhone 11
@@ -11,7 +11,6 @@ before_install:
 - echo $IOS_SIMULATOR_UDID
 - rvm install 2.7.2
 - bundle update
-- bundle install
 
 jobs:
   include:

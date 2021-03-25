@@ -6,11 +6,13 @@ xcode_scheme: Caoculadora
 xcode_destination: platform=iOS Simulator,name=iPhone 11
 
 before_install:
-- export IOS_SIMULATOR_UDID=`instruments -s devices | grep "iPhone 11 (9.3" | awk
-  -F '[ ]' '{print $4}' | awk -F '[\[]' '{print $2}' | sed 's/.$//'`
+- export IOS_SIMULATOR_UDID=`instruments -s devices | grep -m 1 "iPhone 8 (13" | awk -F '[ ]' '{print $4}' | awk -F '[\[]' '{print $2}' | sed 's/.$//'`
 - echo $IOS_SIMULATOR_UDID
+
+install:
 - rvm install 2.7.2
-- bundle update
+- bundle update --all
+- bundle install
 
 jobs:
   include:

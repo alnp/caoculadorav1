@@ -1,4 +1,5 @@
 os: osx
+language: objective-c
 osx_image: xcode12.2
 
 xcode_project: Caoculadora.xcodeproj
@@ -20,7 +21,7 @@ jobs:
     name: Deploy to TestFlight
     script:
     - echo "machine github.com login $GITHUB_API_TOKEN" >> ~/.netrc
-    # - bundle exec fastlane beta
+    - bundle exec fastlane beta
     - bundle exec fastlane pilot upload
 
 env:

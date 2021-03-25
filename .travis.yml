@@ -19,8 +19,8 @@ jobs:
     script:
     - echo "machine github.com login $GITHUB_API_TOKEN" >> ~/.netrc
     # - bundle exec fastlane beta
-    - bundle exec fastlane pilot
-    
+    - bundle exec fastlane pilot upload
+
 env:
   global:
   - secure: dsH1bSqEms4jAeogs6xA0udbtncMG1ovGLKsgPiiWCpADLGLFGFog54WvdFj5Li2+qDsDMsPxiVTGT8Zfdsfs70yzoUTv9rJXG3n4LPix66lWhak2Tdv+DJ7wcQfb9fNas5QNZ3x6JMyqb+PcfAIh4MCZ1pZN8QBh1ux8+c4C+PcmF5Y2Bsc6d8AV34VvRj9dPmh7MuIrJutIRD4+S63B//M7Jw16GWJPD9EgUvUVBabpEMMEhEIv3DSfV3rjqI95BahrG//uY16H223suqUl9PXzXpOCIvHsXUvO7xK3eFnZ0wadLMj3J3S0cOod3LPxBApAbL/88sG5dSxyhzcFpi0/JL/lxpNyq2wzkR9JebHAIc2AyA5HL8H04Co3g9fSekdB3SLXI76aRpvdEDzrJBXjLM1GkfwNxeNPCFLTaDVqMNfacl986AgZsxAcfP6rObAyhc08a8i1QAv3Pt+xRx0ODs6Lj932pQJStLPUrd0toF/A53Kq257xYafBzU1Hh4rH6YcOmTBsR070oIPkYm180kt3GbAumI5xQoRF6hzz6ckHXpcE6x1uNBHQUUdp0lqRrGpxUyGxROPGGFKrYQMZrXUHBTDTgw2OZrZM/xz72lEqpRDy7DJhePUVWoRVLWVZ9dZnASajNRWU6C9cz2r92rVlLtSbZ+NEx3Tzeg=

@@ -9,18 +9,25 @@ import XCTest
 @testable import Caoculadora
 
 class CaoculadoraTests: XCTestCase {
+    
+    // MARK: - Set Up & Tear Down
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    // MARK: - Tests for Model
+    
+    func testhumanAge() {
+        let xsmallDog = Dog(years: 10, months: 11, size: .xsmall)
+        
+        let humanAge = xsmallDog.humanAge()
+        let correctAge = 43
+        XCTAssertEqual(humanAge, correctAge, "Cálculo da idade de um dog xsmall com 10 anos e 11 meses foi de \(humanAge) ao invés de \(correctAge)")
     }
 
     func testPerformanceExample() throws {
